@@ -19,7 +19,6 @@ function App() {
     todo.complete = !todo.complete
     setTodos(newTodo)
   }
-
   useEffect(() => {
     localStorage.setItem(localStorageKey, JSON.stringify(todos))
   },[todos])
